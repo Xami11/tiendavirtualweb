@@ -1,0 +1,119 @@
+html{
+    height: 100%;
+}
+
+h1{
+    font-family: 'Trocchi', serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#7209b7, #3f37c0);
+}
+
+ul{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    color: #fff;
+    background: rgba(0,0,0, .5);
+    font-family: 'Trocchi', serif;
+    letter-spacing: 2px;
+}
+
+.bord{
+    border-radius: 10px;
+}
+
+li a:hover{
+    background-color: #f72585;
+}
+
+.contenido{
+    margin: 50px auto;
+    width: 800px;
+    padding: 40px;
+    background: rgba(0,0,0, .5);
+    border-radius: 10px;
+}
+
+.contenido .element label{
+    color: #fff;
+}
+
+.contenido .element input{
+    width: 20%;
+    padding: 10px 30px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 30px;
+}
+
+.contenido .element input[type="submit"]{
+    background-color: #f72585;
+    border: none;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.contenido h2{
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 30px;
+    color: #4cc9f0;
+    text-align: center;
+    font-family: 'Trocchi', serif;
+}
+
+.prueba{
+    margin: auto;
+}
+.bord .elemento input{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    color: #fff;
+    background: rgba(0,0,0, .5);
+    font-family: 'Trocchi', serif;
+    letter-spacing: 2px;
+    border-radius: 1px;
+    border: none;
+}
+.bord .elemento input:hover{
+    background-color: #f72585;
+}
+
+.contenido .elemento input[type="submit"]{
+    display: block;
+    background-color: #f72585;
+    border: none;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 1px;
+    margin: 15px;
+    text-align: center;
+}

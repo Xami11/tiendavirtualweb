@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <base href="/">
+    <link rel="stylesheet" type="text/css" href="../static/css/logindiseño.css" th:href="@{/css/logindiseño.css}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="contenido">
+        <h2>Bienvenido a la Tienda Generica</h2>
+        <form id="forma" name="forma" th:action="@{/Login}" method="post">
+            <div class="elemento">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required="true"/>
+            </div>
+            <div class="elemento">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required="true"/>
+            </div>
+            <div class="elemento">
+                <input type="submit" value="Aceptar">
+            </div>
+            <div th:if="${param.error}" class="alert alert-danger" role="alert">
+                Invalid Username and Password
+            </div>
+            <div th:if="${param.logout}" class="alert alert-succes" role="alert">
+                You have been logged out.
+            </div>
+        </form>
+    </div>
+</body>
+</html>

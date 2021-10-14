@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Proveedores</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../static/css/estiloproveedores.css' th:href="@{/css/estiloproveedores.css}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet">
+    <script src='main.js'></script>
+</head>
+<body>
+    <nav class="bord">
+        <ul>
+            <li>
+                <form th:action="@{/Usuarios}" class="elemento" method="get">
+                    <input type="submit" value="Usuarios">
+                </form>
+            </li>
+            <li>
+                <form th:action="@{/Clientes}" class="elemento" method="get">
+                    <input type="submit" value="Clientes">
+                </form>
+            </li>
+            <li>
+                <form th:action="@{/Proveedores}" class="elemento" method="get">
+                    <input type="submit" value="Proveedores">
+                </form>
+            </li>
+            <li>
+                <form th:action="@{/Productos}" class="elemento" method="get">
+                    <input type="submit" value="Productos">
+                </form>
+            </li>
+            <li>
+                <form th:action="@{/Ventas}" class="elemento" method="get">
+                    <input type="submit" value="Ventas">
+                </form>
+            </li>
+            <li>
+                <form th:action="@{/Reportes}" class="elemento" method="get">
+                    <input type="submit" value="Reportes">
+                </form>
+            </li>
+            <div class="elemento">
+                <form th:action="@{/logout}" method="post">
+                    <input style="float:right;" type="submit" value="Cerrar Sesion"/>
+                </form>
+            </div>
+        </ul>
+    </nav>
+
+    <h1>Tienda Generica</h1>
+    <hr>
+
+    <div class="contenido">
+        <form id="forma" name="forma" method="POST">
+            <h2>Proveedores</h2>
+            <div class="element">
+                <label for="nit" class="prueba">NIT:</label>
+                <input type="text" id="nit" name="cedula" required="true"/>
+
+                <label for="telefono" class="prueba">Telefono:</label>
+                <input type="text" name="telefono" id="telefono" required="true"><br>
+
+                <label for="nombre" class="prueba">Nombre Proveedor:</label>
+                <input type="text" id="nombre" name="nombre" required="true"/>
+
+                <label for="ciudad" class="prueba">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" required="true"/><br>
+
+                <label for="direccion" class="prueba">Direccion:</label>
+                <input type="text" id="direccion" name="direccion" required="true"/><br>
+            </div>
+            <div class="element">
+                <input type="submit" value="Consultar">
+                <input type="submit" value="Crear">
+                <input type="submit" value="Actualizar">
+                <input type="submit" value="Borrar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
