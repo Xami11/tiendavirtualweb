@@ -1,8 +1,5 @@
 package com.tiendavirtual.tiendavirtual.Controlador;
 
-import com.tiendavirtual.tiendavirtual.Dominio.Persona;
-import com.tiendavirtual.tiendavirtual.PersonaServicio.PersonaService;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
